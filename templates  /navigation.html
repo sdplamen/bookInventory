@@ -1,0 +1,7 @@
+		<nav>
+			<ul>
+				{% for item in menu %}
+   					<li><a href="{{ url_for(item.function) }}">{{ item.name }}</a>
+  				{% endfor %}
+			</ul>
+		</nav>
