@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Users Information{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+	<section>
+		<strong>Welcome to our Page!</strong>
+	</section>
+	<section id="pageContent">
+		<main role="main">
+			<p><H4> Book details:</H4></br></p>
+				<article>
+					<h1>{{ book.title }}</h1>
+					<p><strong>by {{ book.author }}</strong></p>
+					</br>
+					<p>{{ book.description }}</p>
+					<p>Number of pages: {{ book.pages }}</p>
+					<p>Published by: {{ book.publisher }}</p>
+					<p>webpage: <a href="{{ book.website }}">link</a></p>
+				</article>
+
+		</main>
+
+	</section>
+{% endblock %}
