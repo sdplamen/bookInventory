@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Users Information{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+	<section>
+		<strong>Password Generator</strong>
+	</section>
+	<section id="pageContent">
+		<main role="main">
+			<article>
+				<h2>Please find your randomly generated password:</h2>
+				<p>{{ passwd }}</p>
+			</article>
+		</main>
+
+	</section>
+{% endblock %}
