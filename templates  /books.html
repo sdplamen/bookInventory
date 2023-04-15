@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Users Information{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+	<section>
+		<strong>Welcome to our Page!</strong>
+	</section>
+	<section id="pageContent">
+		<main role="main">
+			<p><H1> Our Inventory of Books </H1></br></p>
+			{% for el in inventory %}
+				<article>
+					<h2>{{ el.title }}</h2>
+					<p>{{ el.description }}</p>
+					<p> Read more ...</p>
+				</article>
+			{% endfor %}
+		</main>
+
+	</section>
+{% endblock %}
